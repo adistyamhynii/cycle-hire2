@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background:#212121;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0,67em 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-higlight-color: rgba(0,0,0,0);
+
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1. 42857143;
+    color: #333333;
+    background-color: #fff;
+}
+
+/**
+End;
+*/
+
+/**
+Begin : agar text jadi center align
+*/
+.text-center {
+    text-align: center;
+}
+
+/**
+End
+*/
+/**
+Begin : agar gambar lebarnya 100% menyesuaikan ukuran wrapper / pembungkus
+*/
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+/**
+End
+*/
+
+/**
+Begin : Inisiasi membungkus utama web
+*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left:auto;
+    width: 1170px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8,
+.column-9,
+.column-10,
+.column-11,
+.column-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8,
+.column-9,
+.column-10,
+.column-11,
+.column-12 {
+    float: left;
+}
+
+.column-12 {
+    width: 100%;
+}
+.column-11 {
+    width: 91.66666667%;
+}
+.column-10 {
+    width: 83.33333333%;
+}
+.column-9 {
+    width: 75%;
+}
+.column-8 {
+    width: 66.66666667%;
+}
+.column-7 {
+    width: 58.33333333%;
+}
+.column-6 {
+    width: 50%;
+}
+.column-5 {
+    width: 41.66666667%;
+}
+.column-4 {
+    width: 33.33333333%;
+}
+.column-3 {
+    width: 25%;
+}
+.column-2 {
+    width: 16.66666667%;
+}
+.column-1 {
+    width: 8.33333333%;
+}
+
+/**
+End
+*/
+
+/**
+Begin : style untuk daftar top menu
+*/
+
+.daftar-menu {
+    list-style-type: none;
+    margin: 0 !important;
+    padding:0;
+    overflow: hidden;
+    background-color: #333333;
+    width: 100%;
+
+}
+.daftar-menu li {
+    float: left;
+}
+.daftar-menu li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 16px;
+     text-decoration: none;
+     border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.daftar-menu li a:hover {
+    background-color: #111111;
+
+}
+/**
+End
+*/
+
+/**
+Begin : Design untuk daftar produk
+*/
+.daftar-produk .column-3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.daftar-produk h2 {
+    margin-bottom: 0px;
+
+}
+.harga-produk {
+    text-align: center;
+    font-size: 16px;
+
+}
+/**
+End
+*/
+
+/**
+Begin : Design untuk footer
+*/
+
+.footer {
+    margin-top: 30px;
+    background-color: #1976d2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white
+
+}
+.footer-credit {
+    padding: 15px 0;
+    background-color: #1565c0;
+    color: rgba(255,255,255,0.6)
+}
+.footer-credit a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+
+}
+.footer-menu {
+    text-align: center;
+    padding: 0;
+
+}
+.footer-menu li {
+    display: inline;
+
+}
+.footer-menu li a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+
+}
+/**
+End
+*/
+/**
+Begin Pertemuan 10
+*/
+
+/*Untuk menu agar terlihat beda warnanya saat active*/
+ul.daftar-menu > li.active a {
+    background-color: #666666 !important;
+}
+
+/*Design untuk tag input agar lebih bagus terlihat*/
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px; font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 8 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out 15s, -webkit-box-shadow ease-in-out .15s; 
+    -o-transition: border-color ease-in-out 15s, box-shadow ease-in-out 15s;
+    transition: border-color ease-in-out.15s, box-shadow ease-in-out 155;
+}
+.form-control:focus {
+     border-color: #66afe9;
+     outline: 0;
+     -webkit-box-shadow: inset 0 lpx lpx rgba(0,0,0,.075), 0,0 8px rgba(102, 175, 233, .6);
+     box-shadow: inset 0 lpx lpx rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+
+}
+.form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+    color: #999;
+}
+.form-control::-webkit-input-placeholder {
+    color: #999;
+}
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+/*Design untuk tombol pada halaman*/
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active:focus,
+.btn.active:focus {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.65;
+}
+a.btn.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.btn-success:focus,
+.btn-success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+table {
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+/**
+End Pertemuan 10
+*/
+
+/**
+Begin Pertemuan 11
+*/
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+  .btn-danger :focus,
+  .btn-danger.focus {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2952;
+  }
+  
+  .btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+  }
+  .btn-warning:focus,
+  .btn-warning .focus {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #985f0d;
+  }
+  .btn-warning:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
